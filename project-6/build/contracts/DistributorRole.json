@@ -1,0 +1,1096 @@
+{
+  "contractName": "DistributorRole",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "isDistributor",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "addDistributor",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceDistributor",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610149806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063644241db1461005c5780637250e224146100735780638f0c86fa146100b6575b600080fd5b34801561006857600080fd5b50610071610111565b005b34801561007f57600080fd5b506100b4600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610113565b005b3480156100c257600080fd5b506100f7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610116565b604051808215151515815260200191505060405180910390f35b565b50565b60009190505600a165627a7a72305820508b92a45d86159792ff67675946e8fffef8ccc6b80fd5e46d0f33a3ca51ea3a0029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063644241db1461005c5780637250e224146100735780638f0c86fa146100b6575b600080fd5b34801561006857600080fd5b50610071610111565b005b34801561007f57600080fd5b506100b4600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610113565b005b3480156100c257600080fd5b506100f7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610116565b604051808215151515815260200191505060405180910390f35b565b50565b60009190505600a165627a7a72305820508b92a45d86159792ff67675946e8fffef8ccc6b80fd5e46d0f33a3ca51ea3a0029",
+  "sourceMap": "165:1170:2:-;;;437:29;8:9:-1;5:2;;;30:1;27;20:12;5:2;437:29:2;165:1170;;;;;;",
+  "deployedSourceMap": "165:1170:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;950:46;;8:9:-1;5:2;;;30:1;27;20:12;5:2;950:46:2;;;;;;804:72;;8:9:-1;5:2;;;30:1;27;20:12;5:2;804:72:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;662:75;;8:9:-1;5:2;;;30:1;27;20:12;5:2;662:75:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;950:46;:::o;804:72::-;;:::o;662:75::-;723:4;662:75;;;:::o",
+  "source": "pragma solidity ^0.4.24;\r\n\r\n// Import the library 'Roles'\r\nimport \"./Roles.sol\";\r\n\r\n// Define a contract 'DistributorRole' to manage this role - add, remove, check\r\ncontract DistributorRole {\r\n\r\n  // Define 2 events, one for Adding, and other for Removing\r\n\r\n  // Define a struct 'distributors' by inheriting from 'Roles' library, struct Role\r\n\r\n  // In the constructor make the address that deploys this contract the 1st distributor\r\n  constructor() public {\r\n\r\n  }\r\n\r\n  // Define a modifier that checks to see if msg.sender has the appropriate role\r\n  modifier onlyDistributor() {\r\n\r\n    _;\r\n  }\r\n\r\n  // Define a function 'isDistributor' to check this role\r\n  function isDistributor(address account) public view returns (bool) {\r\n\r\n  }\r\n\r\n  // Define a function 'addDistributor' that adds this role\r\n  function addDistributor(address account) public onlyDistributor {\r\n\r\n  }\r\n\r\n  // Define a function 'renounceDistributor' to renounce this role\r\n  function renounceDistributor() public {\r\n\r\n  }\r\n\r\n  // Define an internal function '_addDistributor' to add this role, called by 'addDistributor'\r\n  function _addDistributor(address account) internal {\r\n\r\n  }\r\n\r\n  // Define an internal function '_removeDistributor' to remove this role, called by 'removeDistributor'\r\n  function _removeDistributor(address account) internal {\r\n\r\n  }\r\n}",
+  "sourcePath": "C:\\Users\\travi\\Projects\\udacity\\nd1309-Project-6b-Example-Template\\project-6\\contracts\\coffeeaccesscontrol\\DistributorRole.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/coffeeaccesscontrol/DistributorRole.sol",
+    "exportedSymbols": {
+      "DistributorRole": [
+        144
+      ]
+    },
+    "id": 145,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 102,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "project:/contracts/coffeeaccesscontrol/Roles.sol",
+        "file": "./Roles.sol",
+        "id": 103,
+        "nodeType": "ImportDirective",
+        "scope": 145,
+        "sourceUnit": 386,
+        "src": "59:21:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 144,
+        "linearizedBaseContracts": [
+          144
+        ],
+        "name": "DistributorRole",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 106,
+              "nodeType": "Block",
+              "src": "458:8:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 107,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 104,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "448:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 105,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "458:0:2"
+            },
+            "scope": 144,
+            "src": "437:29:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 110,
+              "nodeType": "Block",
+              "src": "581:16:2",
+              "statements": [
+                {
+                  "id": 109,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "590:1:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 111,
+            "name": "onlyDistributor",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 108,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "578:2:2"
+            },
+            "src": "554:43:2",
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 118,
+              "nodeType": "Block",
+              "src": "729:8:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 119,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isDistributor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 114,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 113,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "685:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 112,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "685:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "684:17:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 117,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 116,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "723:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 115,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "723:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "722:6:2"
+            },
+            "scope": 144,
+            "src": "662:75:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 126,
+              "nodeType": "Block",
+              "src": "868:8:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 127,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 124,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 123,
+                  "name": "onlyDistributor",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 111,
+                  "src": "852:15:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "852:15:2"
+              }
+            ],
+            "name": "addDistributor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 122,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 121,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 127,
+                  "src": "828:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 120,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "828:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "827:17:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 125,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "868:0:2"
+            },
+            "scope": 144,
+            "src": "804:72:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 130,
+              "nodeType": "Block",
+              "src": "988:8:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 131,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "renounceDistributor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 128,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "978:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 129,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "988:0:2"
+            },
+            "scope": 144,
+            "src": "950:46:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 136,
+              "nodeType": "Block",
+              "src": "1150:8:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 137,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "_addDistributor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 134,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 133,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 137,
+                  "src": "1124:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 132,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1124:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1123:17:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 135,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1150:0:2"
+            },
+            "scope": 144,
+            "src": "1099:59:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 142,
+              "nodeType": "Block",
+              "src": "1324:8:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 143,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "_removeDistributor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 139,
+                  "name": "account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 143,
+                  "src": "1298:15:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 138,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1298:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1297:17:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 141,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1324:0:2"
+            },
+            "scope": 144,
+            "src": "1270:62:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 145,
+        "src": "165:1170:2"
+      }
+    ],
+    "src": "0:1335:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/coffeeaccesscontrol/DistributorRole.sol",
+      "exportedSymbols": {
+        "DistributorRole": [
+          144
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".24"
+          ]
+        },
+        "id": 102,
+        "name": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 386,
+          "absolutePath": "project:/contracts/coffeeaccesscontrol/Roles.sol",
+          "file": "./Roles.sol",
+          "scope": 145,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 103,
+        "name": "ImportDirective",
+        "src": "59:21:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            144
+          ],
+          "name": "DistributorRole",
+          "scope": 145
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "payable": false,
+              "scope": 144,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 104,
+                "name": "ParameterList",
+                "src": "448:2:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 105,
+                "name": "ParameterList",
+                "src": "458:0:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 106,
+                "name": "Block",
+                "src": "458:8:2"
+              }
+            ],
+            "id": 107,
+            "name": "FunctionDefinition",
+            "src": "437:29:2"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "name": "onlyDistributor",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 108,
+                "name": "ParameterList",
+                "src": "578:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "id": 109,
+                    "name": "PlaceholderStatement",
+                    "src": "590:1:2"
+                  }
+                ],
+                "id": 110,
+                "name": "Block",
+                "src": "581:16:2"
+              }
+            ],
+            "id": 111,
+            "name": "ModifierDefinition",
+            "src": "554:43:2"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "isDistributor",
+              "payable": false,
+              "scope": 144,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "scope": 119,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 112,
+                        "name": "ElementaryTypeName",
+                        "src": "685:7:2"
+                      }
+                    ],
+                    "id": 113,
+                    "name": "VariableDeclaration",
+                    "src": "685:15:2"
+                  }
+                ],
+                "id": 114,
+                "name": "ParameterList",
+                "src": "684:17:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 119,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 115,
+                        "name": "ElementaryTypeName",
+                        "src": "723:4:2"
+                      }
+                    ],
+                    "id": 116,
+                    "name": "VariableDeclaration",
+                    "src": "723:4:2"
+                  }
+                ],
+                "id": 117,
+                "name": "ParameterList",
+                "src": "722:6:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 118,
+                "name": "Block",
+                "src": "729:8:2"
+              }
+            ],
+            "id": 119,
+            "name": "FunctionDefinition",
+            "src": "662:75:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "addDistributor",
+              "payable": false,
+              "scope": 144,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "scope": 127,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 120,
+                        "name": "ElementaryTypeName",
+                        "src": "828:7:2"
+                      }
+                    ],
+                    "id": 121,
+                    "name": "VariableDeclaration",
+                    "src": "828:15:2"
+                  }
+                ],
+                "id": 122,
+                "name": "ParameterList",
+                "src": "827:17:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 125,
+                "name": "ParameterList",
+                "src": "868:0:2"
+              },
+              {
+                "attributes": {
+                  "arguments": null
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 111,
+                      "type": "modifier ()",
+                      "value": "onlyDistributor"
+                    },
+                    "id": 123,
+                    "name": "Identifier",
+                    "src": "852:15:2"
+                  }
+                ],
+                "id": 124,
+                "name": "ModifierInvocation",
+                "src": "852:15:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 126,
+                "name": "Block",
+                "src": "868:8:2"
+              }
+            ],
+            "id": 127,
+            "name": "FunctionDefinition",
+            "src": "804:72:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "renounceDistributor",
+              "payable": false,
+              "scope": 144,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 128,
+                "name": "ParameterList",
+                "src": "978:2:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 129,
+                "name": "ParameterList",
+                "src": "988:0:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 130,
+                "name": "Block",
+                "src": "988:8:2"
+              }
+            ],
+            "id": 131,
+            "name": "FunctionDefinition",
+            "src": "950:46:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "_addDistributor",
+              "payable": false,
+              "scope": 144,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "scope": 137,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 132,
+                        "name": "ElementaryTypeName",
+                        "src": "1124:7:2"
+                      }
+                    ],
+                    "id": 133,
+                    "name": "VariableDeclaration",
+                    "src": "1124:15:2"
+                  }
+                ],
+                "id": 134,
+                "name": "ParameterList",
+                "src": "1123:17:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 135,
+                "name": "ParameterList",
+                "src": "1150:0:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 136,
+                "name": "Block",
+                "src": "1150:8:2"
+              }
+            ],
+            "id": 137,
+            "name": "FunctionDefinition",
+            "src": "1099:59:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "_removeDistributor",
+              "payable": false,
+              "scope": 144,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "account",
+                      "scope": 143,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 138,
+                        "name": "ElementaryTypeName",
+                        "src": "1298:7:2"
+                      }
+                    ],
+                    "id": 139,
+                    "name": "VariableDeclaration",
+                    "src": "1298:15:2"
+                  }
+                ],
+                "id": 140,
+                "name": "ParameterList",
+                "src": "1297:17:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 141,
+                "name": "ParameterList",
+                "src": "1324:0:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 142,
+                "name": "Block",
+                "src": "1324:8:2"
+              }
+            ],
+            "id": 143,
+            "name": "FunctionDefinition",
+            "src": "1270:62:2"
+          }
+        ],
+        "id": 144,
+        "name": "ContractDefinition",
+        "src": "165:1170:2"
+      }
+    ],
+    "id": 145,
+    "name": "SourceUnit",
+    "src": "0:1335:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {
+    "1641843464420": {
+      "events": {},
+      "links": {},
+      "address": "0xd22de155853b67ce1ca3693fbe52ee958f755e7b",
+      "transactionHash": "0x51302014b95712368c91bd63612076ea2477c8138ccb892bb633c617f636e5a2"
+    },
+    "1641997691637": {
+      "events": {},
+      "links": {},
+      "address": "0xd22De155853B67cE1cA3693FBE52EE958f755E7b",
+      "transactionHash": "0xe7b638f067d7eb4797795fdac99c4bf86b9017f77d7a3ab6cfa982810561eeb8"
+    },
+    "1641998996893": {
+      "events": {},
+      "links": {},
+      "address": "0xAe4cB0D770f0BaDA4A4d1C180DeCc1BD9b6D531B",
+      "transactionHash": "0x5e8814fa9a32cb3d2fa49d0944684e9a7286f29718aa2fbe8011b35ebc56dbdc"
+    },
+    "1642013540251": {
+      "events": {},
+      "links": {},
+      "address": "0xfe58651e9349EeAEC709dcCc4ff844bDdFa6B548",
+      "transactionHash": "0x56cb4eff29a4ae45870660c73cff05a730cbde229a1b932dcac739dea03a1d2b"
+    },
+    "1642015975633": {
+      "events": {},
+      "links": {},
+      "address": "0x2b06a855144963710c4b6c375ad5a2e35b3983d9",
+      "transactionHash": "0xb7cdf03f4f1c0323481aefffc7415e9b0a4bf761c5f9c923c889b2e929d2ee17"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2022-01-12T19:37:20.928Z"
+}
